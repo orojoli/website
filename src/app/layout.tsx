@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import ScrollProvider from "@/components/ScrollProvider";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Olivier Rojo - Directeur de projets IT",
@@ -26,6 +27,7 @@ export default function RootLayout({
           <Navbar />
           {children}
         </ScrollProvider>
+        <Analytics />
       </body>
     </html>
   );
