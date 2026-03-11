@@ -91,7 +91,7 @@ export default function Home() {
   const timeline = [
     {
       period: "3 ans",
-      title: "Directeur de projets – Codysée (Cardiweb, Noesio)",
+      title: "Directeur de projets – Codyssée (Cardiweb, Noesio)",
       responsibilities: [
         "Pilotage d'un portefeuille de 56 applications multi-pays",
         "Définition des stratégies produits et des roadmaps IT multi-entités",
