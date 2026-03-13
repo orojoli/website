@@ -116,6 +116,10 @@ img {
   transition: var(--transition);
 }
 
+.navbar:not(.navbar-shrink) .navbar-menu a::after {
+  background: #fff;
+}
+
 .navbar-menu a:hover::after {
   width: 100%;
 }
@@ -3088,6 +3092,10 @@ section h2 {
     height: 60px;
   }
   
+  .navbar.navbar-shrink {
+    height: 50px;
+  }
+  
   .navbar .container {
     padding: 10px 15px;
     height: 100%;
@@ -3095,6 +3103,10 @@ section h2 {
   
   .navbar-brand img {
     height: 40px;
+  }
+  
+  .navbar.navbar-shrink .navbar-brand img {
+    height: 30px;
   }
   
   .navbar-menu {
@@ -3116,6 +3128,11 @@ section h2 {
   
   .navbar-menu.active {
     transform: translateY(0);
+  }
+
+  .navbar.navbar-shrink .navbar-menu {
+    top: 50px;
+    box-shadow: none;
   }
 
   .navbar-menu a {
